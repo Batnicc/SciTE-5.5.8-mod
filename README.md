@@ -19,4 +19,3 @@ Added:
     The F3 search has been modified for quick searching without the dialog box (select text, press F3).
     Ctrl+Q: Comment/uncomment all lines based on the first one, instead of inverting all lines.
     Quickly switch the displayed encoding in the context menu.
-	
