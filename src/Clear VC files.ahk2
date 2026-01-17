@@ -1,0 +1,14 @@
+
+SetWorkingDir A_ScriptDir
+
+types:=["*.obj","*.pdb","*.ilk","*.log","*.tlog","*.lastbuildstate","*.recipe","*.exp"
+		,"*.iobj","*.ipdb"]
+
+for val in types
+	loop Files,val,"R"
+		FileDelete(A_LoopFileFullPath)
+
+Loop Files,".vs","RD"
+	DirDelete(A_LoopFileFullPath,true)
+
+MsgBox "Done"
