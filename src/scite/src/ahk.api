@@ -1,0 +1,712 @@
+
+Abs(Number) Returns the absolute value of the specified number.
+ASin(Number) Returns the arcsine (the number whose sine is the\n	 specified number) in radians.
+ACos(Number) Returns the arccosine (the number whose cosine\n	 is the specified number) in radians.
+ATan(Number) Returns the arctangent (the number whose tangent\n	 is the specified number) in radians.
+BlockInput
+Break
+CallbackCreate(Function [, Options, ParamCount]) Creates a machine-code address that when called,\n	 redirects the call to a function in the script.
+CallbackFree(Address) Deletes a callback and releases its reference\n	 to the function object.
+CaretGetPos([&OutputVarX, &OutputVarY]) Retrieves the current position of\n	 the caret (text insertion point).
+Catch
+Ceil(Number) Returns the specified number rounded up to\n	 the nearest integer (without any .00 suffix).
+Chr(Number) Returns the string (usually a single character)\n	 corresponding to the character code indicated by the specified number.
+Click(100, 200, "R D") Clicks a mouse button at the specified coordinates.\n	 It can also hold down a mouse button, turn the mouse wheel, or move the mouse.
+ClipboardAll([Data, Size]) Creates an object containing everything on\n	 the clipboard (such as pictures and formatting).
+ClipWait([Timeout, WaitFor]) Waits until the clipboard contains data.
+ComCall(Index, ComObj [, Type1, Arg1, Type2, Arg2, ReturnType]) Calls a native COM interface method by index.
+ComObjActive(CLSID) Retrieves a registered COM object.
+ComObjArray(VarType, Count1 [, Count2, ... Count8]) Creates a SafeArray for use with COM.
+ComObjConnect(ComObj [, PrefixOrSink]) Connects a COM object's event source to\n	 the script, enabling events to be handled.
+ComObject(CLSID [, IID]) Creates a COM object.
+ComObjFlags(ComObj [, NewFlags, Mask]) Retrieves or changes flags which control\n	 a COM wrapper object's behaviour.
+ComObjFromPtr(DispPtr) Wraps a raw IDispatch pointer (COM object)\n	 for use by the script.
+ComObjGet(Name) Returns a reference to an object provided\n	 by a COM component.
+ComObjQuery(ComObj, SID[, IID]) Queries a COM object for an interface or service.
+ComObjType(ComObj [, InfoType]) Retrieves type information from a COM object.
+ComObjValue(ComObj) Retrieves the value or pointer stored\n	 in a COM wrapper object.
+ComValue(VarType, Value [, Flags]) Wraps a value, SafeArray or COM object for use by the\n	 script or for passing to a COM method.
+Continue
+ControlAddItem(String, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Adds the specified string as a new entry at\n	 the bottom of a ListBox or ComboBox.
+ControlChooseIndex(N, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Sets the selection in a ListBox, ComboBox or\n	 Tab control to be the Nth item.
+ControlChooseString(String, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Sets the selection in a ListBox or ComboBox to be\n	 the first entry whose leading part matches the specified string.
+ControlClick([Control-or-Pos, WinTitle, WinText, WhichButton, ClickCount, Options, ExcludeTitle, ExcludeText]) Sends a mouse button or mouse wheel event to a control.
+ControlDeleteItem(N, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Deletes the specified entry number\n	 from a ListBox or ComboBox.
+ControlFindItem(String, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the entry number of a ListBox or\n	 ComboBox that is a complete match for the specified string.
+ControlFocus(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Sets input focus to a given control on a window.
+ControlGetChecked(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns a non-zero value if the checkbox\n	 or radio button is checked.
+ControlGetChoice(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the name of the currently selected\n	 entry in a ListBox or ComboBox.
+ControlGetClassNN(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the ClassNN (class name and sequence number)\n	 of the specified control.
+ControlGetEnabled(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns a non-zero value if the specified\n	 control is enabled.
+ControlGetFocus([WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves which control of the target\n	 window has keyboard focus, if any.
+ControlGetHwnd(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the unique ID number of\n	 the specified control.
+ControlGetIndex(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the index of the currently selected\n	 entry or tab in a ListBox, ComboBox or Tab control.
+ControlGetItems(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns an array of items/rows from a\n	 ListBox, ComboBox, or DropDownList.
+ControlGetPos([&OutX, &OutY, &OutWidth, &OutHeight, Control, WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves the position and size of a control.
+ControlGetStyle(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns an integer representing the style of\n	 the specified control.
+ControlGetExStyle(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns an integer representing the extended style\n	 of the specified control.
+ControlGetText(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves text from a control.
+ControlGetVisible(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns a non-zero value if the specified control is visible.
+ControlHide(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Hides the specified control.
+ControlHideDropDown(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Hides the drop-down list of a ComboBox control.
+ControlMove([X, Y, Width, Height, Control, WinTitle, WinText, ExcludeTitle, ExcludeText]) Moves or resizes a control.
+ControlSend(Keys [, Control, WinTitle, WinText, ExcludeTitle, ExcludeText]) Sends simulated keystrokes to a window or control.
+ControlSendText(Keys [, Control, WinTitle, WinText, ExcludeTitle, ExcludeText]) Sends simulated text to a window or control.
+ControlSetChecked(NewSetting, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Turns on (checks) or turns off (unchecks)\n	 a checkbox or radio button.
+ControlSetEnabled(NewSetting, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Enables or disables the specified control.
+ControlSetStyle(Value, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Changes the style of the\n	 specified control, respectively.
+ControlSetExStyle(Value, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Changes the extended style of the specified control, respectively.
+ControlSetText(NewText, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Changes the text of a control.
+ControlShow(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Shows the specified control if it was previously hidden.
+ControlShowDropDown(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Shows the drop-down list of a ComboBox control.
+CoordMode(TargetType [, RelativeTo]) Sets coordinate mode for various built-in functions\n	 to be relative to either the active window or the screen.
+Cos(Number) Returns the trigonometric cosine of the specified number.
+Critical([OnOffNumeric]) Prevents the current thread from being\n	 interrupted by other threads, or enables it to be interrupted.
+DateAdd(DateTime, Time, TimeUnits) Adds or subtracts time from a date-time value.
+DateDiff(DateTime1, DateTime2, TimeUnits) Compares two date-time values and returns the difference.
+DetectHiddenText(Mode) Determines whether invisible text in a window\n	 is "seen" for the purpose of finding the window.\n	 This affects windowing functions such as WinExist and WinActivate.
+DetectHiddenWindows(Mode) Determines whether invisible windows\n	 are "seen" by the script.
+DirCopy(Source, Dest [, Overwrite]) Copies a folder along with all its sub-folders and\n	 files (similar to xcopy) or the entire contents\n	 of an archive file such as ZIP.
+DirCreate(DirName) Creates a folder.
+DirDelete(DirName [, Recurse]) Deletes a folder.
+DirExist(FilePattern) Checks for the existence of a folder\n	 and returns its attributes.
+DirMove(Source, Dest [, OverwriteOrRename]) Moves a folder along with all its sub-folders and\n	 files. It can also rename a folder.
+DirSelect([StartingFolder, Options, Prompt]) Displays a standard dialog that allows\n	 the user to select a folder.
+DllCall("[DllFile\]Function" [, Type1, Arg1, Type2, Arg2, "Cdecl ReturnType"]) Calls a function inside a DLL, such as\n	 a standard Windows API function.
+Download(URL, Filename) Downloads a file from the Internet.
+DriveEject([Drive]) Ejects the tray of the specified CD/DVD drive.\n	 DriveEject can also eject a removable drive.
+DriveRetract([Drive]) Retracts the tray of the specified CD/DVD drive.\n	 DriveEject can also eject a removable drive.
+DriveGetCapacity(Path) Returns the total capacity of the drive which\n	 contains the specified path, in megabytes.
+DriveGetFileSystem(Drive) Returns the type of the specified drive's file system.
+DriveGetLabel(Drive) Returns the volume label of the specified drive.
+DriveGetList([DriveType]) Returns a string of letters, one character\n	 for each drive letter in the system.
+DriveGetSerial(Drive) Returns the volume serial number of the specified drive.
+DriveGetSpaceFree(Path) Returns the free disk space of the drive\n	 which contains the specified path, in megabytes.
+DriveGetStatus(Path) Returns the status of the drive\n	 which contains the specified path.
+DriveGetStatusCD([Drive]) Returns the media status of the specified CD/DVD drive.
+DriveGetType(Path) Returns the type of the drive which contains the specified path.
+DriveLock(Drive) Prevents the eject feature of the\n	 specified drive from working.
+DriveSetLabel(Drive [, NewLabel]) Changes the volume label of the specified drive.
+DriveUnlock(Drive) Restores the eject feature of the specified drive.
+Edit
+EditGetCurrentCol(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the column number in an Edit control where\n	 the caret (text insertion point) resides.
+EditGetCurrentLine(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the line number in an Edit control where\n	 the caret (text insert point) resides.
+EditGetLine(N, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the text of the specified line in an Edit control.
+EditGetLineCount(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the number of lines in an Edit control.
+EditGetSelectedText(Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the selected text in an Edit control.
+EditPaste(String, Control [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Pastes the specified string at the\n	 caret (text insertion point) in an Edit control.
+else
+EnvGet(EnvVar) Retrieves the value of the specified environment variable.
+EnvSet(EnvVar [, Value]) Writes a value to the specified environment variable.
+Exit
+Exit([ExitCode]) Exits the current thread.
+ExitApp
+ExitApp([ExitCode]) Terminates the script.
+Exp(N) Returns the result of raising e\n	 (which is approximately 2.71828182845905) to the Nth power.
+FileAppend(Text [, Filename, Options]) Writes text or binary data to the end of\n	 a file (first creating the file, if necessary).
+FileCopy(SourcePattern, DestPattern [, Overwrite]) Copies one or more files.
+FileCreateShortcut(Target, LinkFile [, WorkingDir, Args, Description, IconFile, ShortcutKey, IconNumber, RunState]) Creates a shortcut (.lnk) file.
+FileDelete(FilePattern) Deletes one or more files permanently.
+FileEncoding(Encoding) Sets the default encoding for\n	 FileRead, Loop Read, FileAppend, and FileOpen.
+FileExist(FilePattern) Checks for the existence of a file or\n	 folder and returns its attributes.
+FileInstall(Source, Dest [, Overwrite]) Includes the specified file inside\n	 the compiled version of the script.
+FileGetAttrib([Filename]) Reports whether a file or folder is read-only, hidden, etc.
+FileGetShortcut(LinkFile [, &OutTarget, &OutDir, &OutArgs, &OutDescription, &OutIcon, &OutIconNum, &OutRunState]) Retrieves information about a shortcut (.lnk) file,\n	 such as its target file.
+FileGetSize([Filename, Units]) Retrieves the size of a file.
+FileGetTime([Filename, WhichTime]) Retrieves the datetime stamp of a file or folder.
+FileGetVersion([Filename]) Retrieves the version of a file.
+FileMove(SourcePattern, DestPattern [, Overwrite]) Moves or renames one or more files.
+FileOpen(Filename, Flags [, Encoding]) Opens a file to read specific content\n	 from it and/or to write new content into it.
+FileRead(Filename [, Options]) Retrieves the contents of a file.
+FileRecycle(FilePattern) Sends a file or directory to the recycle bin\n	 if possible, or permanently deletes it.
+FileRecycleEmpty([DriveLetter]) Empties the recycle bin.
+FileSelect([Options, RootDir\Filename, Title, Filter]) Displays a standard dialog that allows\n	 the user to open or save file(s).
+FileSetAttrib(Attributes [, FilePattern, Mode]) Changes the attributes of one or\n	 more files or folders. Wildcards are supported.
+FileSetTime([YYYYMMDDHH24MISS, FilePattern, WhichTime, Mode]) Changes the datetime stamp of one or\n	 more files or folders. Wildcards are supported.
+Finally
+Float(Value) Converts a numeric string or integer\n	 value to a floating-point number.
+Floor(Number) Returns the specified number rounded down\n	 to the nearest integer (without any .00 suffix).
+For(Value1 [, Value2] in Expression) Repeats one or more statements once\n	 for each key-value pair in an object.
+Format(FormatStr [, Values...]) Formats a variable number of input values\n	 according to a format string.
+FormatTime([YYYYMMDDHH24MISS, Format]) Transforms a YYYYMMDDHH24MISS timestamp into\n	 the specified date/time format.
+GetKeyName(KeyName) Retrieves the name/text of a key.
+GetKeyVK(KeyName) Retrieves the virtual key code of a key.
+GetKeySC(KeyName) Retrieves the scan code of a key.
+GetKeyState(KeyName [, Mode]) Returns 1 (true) or 0 (false) depending on whether\n	 the specified keyboard key or mouse/controller button is\n	 down or up. Also retrieves controller status.
+Goto("Label") Jumps to the specified label and continues execution.
+GroupActivate(GroupName [, Mode]) Activates the next window in a window group\n	 that was defined with GroupAdd.
+GroupAdd(GroupName [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Adds a window specification to a window group,\n	 creating the group if necessary.
+GroupClose(GroupName [, Mode]) Closes the active window if it was just activated\n	 by GroupActivate or GroupDeactivate.\n	 It then activates the next window in the series.\n	 It can also close all windows in a group.
+GroupDeactivate(GroupName [, Mode]) Similar to GroupActivate except activates the\n	 next window not in the group.
+Gui([Options, Title, EventObj]) Creates a new window.
+GuiCtrlFromHwnd(Hwnd) Retrieves the GuiControl object of a GUI control\n	 associated with the specified window handle.
+GuiFromHwnd(Hwnd [, RecurseParent]) Retrieves the Gui object of a GUI window\n	 associated with the specified window handle.
+HotIf(["Expression"]) Specifies the criteria for subsequently created\n	 or modified hotkey variants and hotstring variants.
+HotIf([Callback]) Specifies the criteria for subsequently created\n	 or modified hotkey variants and hotstring variants.
+Hotkey(KeyName [, Action, Options]) Creates, modifies, enables, or disables\n	 a hotkey while the script is running.
+Hotstring(String [, Replacement, OnOffToggle]) Creates a hotstring while the script is running.
+Hotstring(NewOptions) Modifies, enables, or disables a hotstring\n	 while the script is running.
+Hotstring(SubFunction [, Value1]) Modifies a hotstring while the script is running.
+IL_Create([InitialCount, GrowCount, LargeIcons]) Creates a new ImageList that is initially empty.
+IL_Add(ImageListID, IconFileName [, IconNumber]) Adds an icon or picture to the specified ImageList.
+IL_Add(ImageListID, PicFileName, MaskColor, Resize) Adds an icon or picture to the specified ImageList.
+IL_Destroy(ImageListID) Deletes the specified ImageList.
+ImageSearch(&OutputVarX, &OutputVarY, X1, Y1, X2, Y2, ImageFile) Searches a region of the screen for an image.
+IniDelete(Filename, Section [, Key]) Deletes a value from a standard format .ini file.
+IniRead(Filename, Section, Key [, Default]) Reads a value from a standard format .ini file.
+IniRead(Filename, Section) Reads a section from a standard format .ini file.
+IniRead(Filename) Reads a list of section names\n	 from a standard format .ini file.
+IniWrite(Value, Filename, Section, Key) Writes a value or section to a standard format .ini file.
+IniWrite(Pairs, Filename, Section) Writes a value or section to a standard format .ini file.
+InputBox([Prompt, Title, Options, Default]) Displays an input box to ask the user to enter a string.
+InputHook([Options, EndKeys, MatchList]) Creates an object which can be used\n	 to collect or intercept keyboard input.
+InstallKeybdHook([Install, Force]) Installs or uninstalls the keyboard hook.
+InstallMouseHook([Install, Force]) Installs or uninstalls the mouse hook.
+InStr(Haystack, Needle [, CaseSense, StartingPos, Occurrence]) Searches for a given occurrence of a string, from the left or the right.
+Integer(Value) Converts a numeric string or\n	 floating-point value to an integer.
+IsLabel(LabelName) Returns a non-zero number if the specified label\n	 exists in the current scope.
+IsObject(Value) Returns a non-zero number if the specified value is an object.
+IsSet(Var) Returns a non-zero number if the specified\n	 variable has been assigned a value.
+IsSetRef(&Ref) Returns a non-zero number if the specified\n	 variable has been assigned a value.
+KeyHistory([MaxEvents]) Displays script info and a history of the most\n	 recent keystrokes and mouse clicks.
+KeyWait(KeyName [, Options]) Waits for a key or mouse/controller button\n	 to be released or pressed down.
+ListHotkeys
+ListLines([Mode]) Enables or disables line logging or displays the\n	 script lines most recently executed.
+ListVars
+ListViewGetContent([Options, Control, WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns a list of items/rows from a ListView.
+LoadPicture(Filename [, Options, &OutImageType]) Loads a picture from file and returns a bitmap or icon handle.
+Log(Number) Returns the logarithm (base 10) of the specified number.
+Ln(Number) Returns the natural logarithm (base e) of the specified number.
+Loop([Count]) Performs one or more statements repeatedly:\n	 either the specified number of times or until Break is encountered.
+Loop(Files FilePattern [, Mode]) Retrieves the specified files or folders, one at a time.
+Loop(Parse String [, DelimiterChars, OmitChars]) Retrieves substrings (fields) from a string, one at a time.
+Loop(Read InputFile [, OutputFile]) Retrieves the lines in a text file, one at a time.
+Loop(Reg KeyName [, Mode]) Retrieves the contents of the specified\n	 registry subkey, one item at a time.
+Max(Number1 [, Number2, ...]) Returns the highest number from a set of numbers.
+MenuBar() Creates a new MenuBar object.
+Menu() Creates a new Menu object.
+MenuFromHandle(Handle) Retrieves the Menu or MenuBar object\n	 corresponding to a Win32 menu handle.
+MenuSelect(WinTitle, WinText, Menu [, SubMenu1, SubMenu2, SubMenu3, SubMenu4, SubMenu5, SubMenu6, ExcludeTitle, ExcludeText]) Invokes a menu item from the menu bar of the specified window.
+Min(Number1 [, Number2, ...]) Returns the lowest number from a set of numbers.
+Mod(Dividend, Divisor) Modulo. Returns the remainder of a number (dividend)\n	 divided by another number (divisor).
+MonitorGet([N, &Left, &Top, &Right, &Bottom]) Checks if the specified monitor exists and\n	 optionally retrieves its bounding coordinates.
+MonitorGetCount() Returns the total number of monitors.
+MonitorGetName([N]) Returns the operating system's name of the specified monitor.
+MonitorGetPrimary() Returns the number of the primary monitor.
+MonitorGetWorkArea([N, &Left, &Top, &Right, &Bottom]) Checks if the specified monitor exists and optionally\n	 retrieves the bounding coordinates of its working area.
+MouseClick([WhichButton, X, Y, ClickCount, Speed, DownOrUp, Relative]) Clicks or holds down a mouse button, or turns the mouse wheel.\n	 Note: The Click function is generally more flexible and easier to use.
+MouseClickDrag(WhichButton, X1, Y1, X2, Y2 [, Speed, Relative]) Clicks and holds the specified mouse button, moves the mouse\n	 to the destination coordinates, then releases the button.
+MouseGetPos([&OutputVarX, &OutputVarY, &OutputVarWin, &OutputVarControl, Flag]) Retrieves the current position of the mouse cursor,\n	 and optionally which window and control it is hovering over.
+MouseMove(X, Y [, Speed, Relative]) Moves the mouse cursor.
+MsgBox([Text, Title, Options]) Displays the specified text in a small window containing\n	 one or more buttons (such as Yes and No, and retrieves result).
+Number(Value) Converts a numeric string to a pure integer or floating-point number.
+NumGet(Source, Offset, Type) Returns the binary number stored at the specified source+offset.
+NumGet(Source, Type) Returns the binary number stored at the specified source.
+NumPut(Type, Number, [Type2, Number2, ...] Target [, Offset]) Stores one or more numbers in binary format at the specified address+offset.
+ObjAddRef(Ptr) Increments an object's reference count.
+ObjRelease(Ptr) Decrements an object's reference count.
+ObjBindMethod(Obj [, Method, Params]) Creates a BoundFunc object which calls a method of a given object.
+ObjGetBase(Value) Returns the value's base object.
+ObjGetCapacity(Obj) Returns the current capacity of\n	 the object's internal array of properties.
+ObjOwnPropCount(Obj) Returns the number of properties owned by an object.
+ObjSetBase(Obj, BaseObj) Sets an object's base object.
+ObjSetCapacity(Obj, MaxProps) Sets the current capacity of\n	 the object's internal array of own properties.
+OnClipboardChange(Callback [, AddRemove]) Registers a function to be called\n	 automatically whenever the clipboard's content changes.
+OnError(Callback [, AddRemove]) Registers a function to be called automatically\n	 whenever an unhandled error occurs.
+OnExit(Callback [, AddRemove]) Registers a function to be called automatically\n	 whenever the script exits.
+OnMessage(MsgNumber, Callback [, MaxThreads]) Registers a function to be called automatically\n	 whenever the script receives the specified message.
+Ord(String) Returns the ordinal value (numeric character code)\n	 of the first character in the specified string.
+OutputDebug(Text) Sends a string to the debugger (if any) for display.
+Pause([UnderlyingThreadState]) Pauses the script's current thread or sets\n	 the pause state of the underlying thread.
+Persistent([Persist]) Prevents the script from exiting automatically\n	 when its last thread completes, allowing it to stay running in an idle state.
+PixelGetColor(X, Y [, Mode]) Retrieves the color of the pixel at\n	 the specified X and Y coordinates.
+PixelSearch(&OutputVarX, &OutputVarY, X1, Y1, X2, Y2, ColorID [, Variation]) Searches a region of the screen for a pixel of the specified color.
+PostMessage(MsgNumber [, wParam, lParam, Control, WinTitle, WinText, ExcludeTitle, ExcludeText]) Places a message in the message queue of a window or control.
+ProcessClose(NameOrPID) Forces the first matching process to close.
+ProcessExist([NameOrPID]) Checks if the specified process exists.
+ProcessGetName([NameOrPID]) Returns the name of the specified process.
+ProcessGetPath([NameOrPID]) Returns the path of the specified process.
+ProcessGetParent([NameOrPID]) Returns the process ID (PID) of the process\n	 which created the specified process.
+ProcessSetPriority(Level [, NameOrPID]) Changes the priority level of the first matching process.
+ProcessWait(NameOrPID [, Timeout]) Waits for the specified process to exist.
+ProcessWaitClose(NameOrPID [, Timeout]) Waits for all matching processes to close.
+Random([A, B]) Generates a pseudo-random number.
+RegExMatch(Haystack, NeedleRegEx [, &OutputVar, StartingPos]) Determines whether a string contains a pattern (regular expression).
+RegExReplace(Haystack, NeedleRegEx [, Replacement, &OutputVarCount, Limit, StartingPos]) Replaces occurrences of a pattern (regular expression) inside a string.
+RegCreateKey([KeyName]) Creates a registry key without writing a value.
+RegDelete([KeyName, ValueName]) Deletes a value from the registry.
+RegDeleteKey([KeyName]) Deletes a subkey from the registry.
+RegRead([KeyName, ValueName, Default]) Reads a value from the registry.
+RegWrite(Value, ValueType, KeyName [, ValueName]) Writes a value to the registry.
+RegWrite(Value [, ValueType, , ValueName]) Writes a value to the registry.
+Reload
+Return
+Return([Expression]) Returns from a function to which\n	 execution had previously jumped via function-call,\n	 Hotkey activation, or other means.
+Round(Number [, N]) Returns the specified number rounded to N decimal places.
+Run(Target [, WorkingDir, Options, &OutputVarPID]) Runs an external program.
+RunWait(Target [, WorkingDir, Options, &OutputVarPID]) RunWait will wait until the program finishes before continuing.
+RunAs([User, Password, Domain]) Specifies a set of user credentials to use\n	 for all subsequent Run and RunWait functions.
+Send(Keys) By default, Send is synonymous with SendInput;\n	 but it can be made a synonym for SendEvent or SendPlay via SendMode.
+SendText(Keys) Similar to Send, except that all characters in Keys\n	 are interpreted and sent literally. See Text mode for details.
+SendInput(Keys) SendInput uses the same syntax as SendEvent but\n	 is generally faster and more reliable. In addition, it buffers any physical keyboard\n	 or mouse activity during the send, which prevents the user's keystrokes\n	 from being interspersed with those being sent.\n	 SendMode can be used to make Send\n	 synonymous with SendInput. See SendInput for details.
+SendPlay(Keys) Deprecated. Similar to SendInput, except that\n	 it may have no effect at all on Windows 11 and later,\n	 or if User Account Control (UAC) ¬ is enabled, even if the script\n	 is running as an administrator. See SendPlay for details.
+SendEvent(Keys) SendEvent sends keystrokes using the Windows\n	 keybd_event function (search Microsoft Docs for details).\n	 The rate at which keystrokes are sent is determined by SetKeyDelay.\n	 SendMode can be used to make Send synonymous with SendEvent.
+SendLevel(Level) Controls which artificial keyboard and\n	 mouse events are ignored by hotkeys and hotstrings.
+SendMessage(MsgNumber [, wParam, lParam, Control, WinTitle, WinText, ExcludeTitle, ExcludeText, Timeout]) Sends a message to a window or control and waits for acknowledgement.
+SendMode(Mode) Makes Send synonymous with SendEvent or SendPlay rather than\n	 the default (SendInput).\n	 Also makes Click and MouseMove/Click/Drag use the specified method.
+SetCapsLockState([State]) Sets the state of CapsLock.\n	 Can also force the key to stay on or off.
+SetNumLockState([State]) Sets the state of NumLock.\n	 Can also force the key to stay on or off.
+SetScrollLockState([State]) Sets the state of ScrollLock.\n	 Can also force the key to stay on or off.
+SetRegView(RegView) Sets the registry view used by RegRead, RegWrite,\n	 RegDelete, RegDeleteKey and Loop Reg, allowing them in a 32-bit script\n	 to access the 64-bit registry view and vice versa.
+SetStoreCapsLockMode(Mode) Whether to restore the state of CapsLock after a Send.
+SetTimer([Function, Period, Priority]) Causes a function to be called automatically\n	 and repeatedly at a specified time interval.
+SetTitleMatchMode(MatchModeSpeed) Sets the matching behavior of the WinTitle parameter\n	 in built-in functions such as WinWait.\n	 MatchMode=1|2|3|RegEx. Speed=Fast|Slow.
+SetWinDelay(Delay) Sets the delay that will occur after each\n	 windowing function, such as WinActivate.
+SetWorkingDir(DirName) Changes the script's current working directory.
+Shutdown(Flag) Shuts down, restarts, or logs off the system.\n	 0=Logoff 1=Shutdown 2=Reboot 4=Force 8=Power down.
+Sin(Number) Returns the trigonometric sine of the specified number.
+Sleep(Delay) Waits the specified amount of time before continuing.
+Sort(String [, Options, Callback]) Arranges a variable's contents in alphabetical,\n	 numerical, or random order (optionally removing duplicates).
+SoundBeep([Frequency, Duration]) Emits a tone from the PC speaker.
+SoundGetInterface(IID, [Component, Device]) Retrieves a native COM interface of a sound device or component.
+SoundGetMute([Component, Device]) Retrieves a mute setting of a sound device.
+SoundGetName([Component, Device]) Retrieves the name of a sound device or component.
+SoundGetVolume([Component, Device]) Retrieves a volume setting of a sound device.
+SoundPlay(Filename [, Wait]) Plays a sound, video, or other supported file type.
+SoundSetMute(NewSetting [, Component, Device]) Changes a mute setting of a sound device.
+SoundSetVolume(NewSetting [, Component, Device]) Changes a volume setting of a sound device.
+SplitPath(Path [, &OutFileName, &OutDir, &OutExtension, &OutNameNoExt, &OutDrive]) Separates a file name or URL into its name,\n	 directory, extension, and drive.
+Sqrt(Number) Returns the square root of the specified number.
+StatusBarGetText([Part#, WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves the text from a standard status bar control.
+StatusBarWait([BarText, Timeout, Part#, WinTitle, WinText, Interval, ExcludeTitle, ExcludeText]) Waits until a window's status bar contains the specified string.
+StrCompare(String1, String2 [, CaseSense]) Compares two strings alphabetically.
+StrGet(Source [, Length, Encoding]) Copies a string from a memory address or buffer,\n	 optionally converting it from a given code page.
+StrGet(Source [, Encoding]) Copies a string from a memory address or buffer,\n	 optionally converting it from a given code page.
+String(Value) Converts a value to a string.
+StrLen(String) Retrieves the count of how many characters are in a string.
+StrLower(String) Converts a string to lowercase case.
+StrUpper(String) Converts a string to uppercase.
+StrTitle(String) Converts a string to title case.
+StrPtr(Value) Returns the current memory address of a string.
+StrPut(String, Target [, Length, Encoding]) Copies a string to a memory address or buffer,\n	 optionally converting it to a given code page.
+StrPut(String, Target [, Encoding]) Copies a string to a memory address or buffer,\n	 optionally converting it to a given code page.
+StrPut(String [, Encoding]) Copies a string to a memory address or buffer,\n	 optionally converting it to a given code page.
+StrReplace(Haystack, Needle [, ReplaceText, CaseSense, &OutputVarCount, Limit]) Replaces the specified substring with a new string.
+StrSplit(String [, Delimiters, OmitChars, MaxParts]) Separates a string into an array\n	 of substrings using the specified delimiters.
+SubStr(String, StartingPos [, Length]) Retrieves one or more characters from\n	 the specified position in a string.
+Suspend([NewState]) Disables or enables all or selected hotkeys and hotstrings.
+Switch([SwitchValue, CaseSense]) Compares a value with multiple cases and\n	 executes the statements of the first match.
+SysGet(Property) Retrieves dimensions of system objects,\n	 and other system properties.
+SysGetIPAddresses() Returns an array of the system's IPv4 addresses.
+Tan(Number) Returns the trigonometric tangent of the specified number.
+Thread(SubFunction [, Value1, Value2]) Sets the priority or interruptibility of threads.\n	 It can also temporarily disable all timers.
+Throw([Value]) Signals the occurrence of an error.\n	 This signal can be caught by a Try-Catch statement.
+ToolTip([Text, X, Y, WhichToolTip]) Shows an always-on-top window anywhere on the screen.
+TraySetIcon([FileName, IconNumber, Freeze]) Changes the script's tray icon\n	 (which is also used by GUI and dialog windows).
+TrayTip([Text, Title, Options]) Shows a balloon message window or,\n	 on Windows 10 and later, a toast notification near the tray icon.
+Trim(String [, OmitChars]) Trims characters from the beginning and end of a string.
+LTrim(String [, OmitChars]) Trims characters from the beginning of a string.
+RTrim(String [, OmitChars]) Trims characters from the end of a string.
+Try
+Type(Value) Returns the class name of a value.
+Until
+VarSetStrCapacity(&TargetVar [, RequestedCapacity]) Enlarges a variable's holding capacity or frees its memory.\n	 This is not normally needed, but may be used with DllCall or\n	 SendMessage or to optimize repeated concatenation.
+VerCompare(VersionA, VersionB) Compares two version strings.
+While
+WinActivate([WinTitle, WinText, ExcludeTitle, ExcludeText]) Activates the specified window.
+WinActivateBottom([WinTitle, WinText, ExcludeTitle, ExcludeText]) Same as WinActivate except that it activates\n	 the bottommost matching window rather than the topmost.
+WinActive([WinTitle, WinText, ExcludeTitle, ExcludeText]) Checks if the specified window is active and\n	 returns its unique ID (HWND).
+WinClose([WinTitle, WinText, SecondsToWait, ExcludeTitle, ExcludeText]) Closes the specified window.
+WinExist([WinTitle, WinText, ExcludeTitle, ExcludeText]) Checks if the specified window exists and\n	 returns the unique ID (HWND) of the first matching window.
+WinGetClass([WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves the specified window's class name.
+WinGetClientPos([&OutX, &OutY, &OutWidth, &OutHeight, WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves the position and size of the specified window's client area.
+WinGetControls([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns an array of names (ClassNNs)\n	 for all controls in the specified window.
+WinGetControlsHwnd([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns an array of unique ID numbers (HWNDs)\n	 for all controls in the specified window.
+WinGetCount([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the number of existing windows\n	 that match the specified criteria.
+WinGetID([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the unique ID number (HWND)\n	 of the specified window.
+WinGetIDLast([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the unique ID number (HWND)\n	 of the last/bottommost window if there is more than one match.
+WinGetList([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns an array of unique ID numbers (HWNDs)\n	 for all existing windows that match the specified criteria.
+WinGetMinMax([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns a non-zero number if the specified\n	 window is maximized or minimized.
+WinGetPID([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the Process ID number (PID)\n	 of the specified window.
+WinGetPos([&OutX, &OutY, &OutWidth, &OutHeight, WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves the position and size of the specified window.
+WinGetProcessName([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the name of the process that owns the specified window.
+WinGetProcessPath([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the full path and name of the process\n	 that owns the specified window.
+WinGetStyle([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the style of the specified window.
+WinGetExStyle([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the extended style of the specified window.
+WinGetText([WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves the text from the specified window.
+WinGetTitle([WinTitle, WinText, ExcludeTitle, ExcludeText]) Retrieves the title of the specified window.
+WinGetTransColor([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the color that is marked transparent in the specified window.
+WinGetTransparent([WinTitle, WinText, ExcludeTitle, ExcludeText]) Returns the degree of transparency of the specified window.
+WinHide([WinTitle, WinText, ExcludeTitle, ExcludeText]) Hides the specified window.
+WinKill([WinTitle, WinText, SecondsToWait, ExcludeTitle, ExcludeText]) Forces the specified window to close.
+WinMaximize([WinTitle, WinText, ExcludeTitle, ExcludeText]) Enlarges the specified window to its maximum size.
+WinMinimize([WinTitle, WinText, ExcludeTitle, ExcludeText]) Collapses the specified window into a button on the task bar.
+WinMinimizeAll
+WinMinimizeAllUndo
+WinMove([X, Y, Width, Height, WinTitle, WinText, ExcludeTitle, ExcludeText]) Changes the position and/or size of the specified window.
+WinMoveBottom([WinTitle, WinText, ExcludeTitle, ExcludeText]) Sends the specified window to the bottom\n	 of stack; that is, beneath all other windows.
+WinMoveTop([WinTitle, WinText, ExcludeTitle, ExcludeText]) Brings the specified window to the top of the stack\n	 without explicitly activating it.
+WinRedraw([WinTitle, WinText, ExcludeTitle, ExcludeText]) Redraws the specified window.
+WinRestore([WinTitle, WinText, ExcludeTitle, ExcludeText]) Unminimizes or unmaximizes the specified\n	 window if it is minimized or maximized.
+WinSetAlwaysOnTop([NewSetting, WinTitle, WinText, ExcludeTitle, ExcludeText]) Makes the specified window stay on top of\n	 all other windows (except other always-on-top windows).
+WinSetEnabled(NewSetting [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Enables or disables the specified window.
+WinSetRegion([Options, WinTitle, WinText, ExcludeTitle, ExcludeText]) Changes the shape of the specified window\n	 to be the specified rectangle, ellipse, or polygon.
+WinSetStyle(Value [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Changes the style of the specified window, respectively.
+WinSetExStyle(Value [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Changes the style of the specified window, respectively.
+WinSetTitle(NewTitle [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Changes the title of the specified window.
+WinSetTransColor(Color [, WinTitle, WinText, ExcludeTitle, ExcludeText]) Makes all pixels of the chosen color\n	 invisible inside the specified window.
+WinSetTransparent(N, [WinTitle, WinText, ExcludeTitle, ExcludeText]) Makes the specified window semi-transparent.
+WinShow([WinTitle, WinText, ExcludeTitle, ExcludeText]) Unhides the specified window.
+WinWait([WinTitle, WinText, Timeout, ExcludeTitle, ExcludeText]) Waits until the specified window exists.
+WinWaitActive([WinTitle, WinText, Timeout, ExcludeTitle, ExcludeText]) Waits until the specified window is active.
+WinWaitNotActive([WinTitle, WinText, Timeout, ExcludeTitle, ExcludeText]) Waits until the specified window is not active.
+WinWaitClose([WinTitle, WinText, Timeout, ExcludeTitle, ExcludeText]) Waits until no matching windows can be found.
+#ClipboardTimeout
+#DllLoad
+#ErrorStdOut
+#Hotstring
+#HotIf
+#HotIfTimeout
+#Include
+#IncludeAgain
+#InputLevel
+#MaxThreads
+#MaxThreadsBuffer
+#MaxThreadsPerHotkey
+#NoTrayIcon
+#Requires
+#SingleInstance
+#SuspendExempt
+#UseHook
+#Warn
+#WinActivateForce
+
+__Init() An instance variable is one that each\n	 instance of the class has its own copy of.
+__New() Constructs a new object instance.
+Array([Value, Value2, ..., ValueN]) Creates a new Array containing the specified values.
+Buffer([ByteCount, FillByte]) Creates a new Buffer object.
+Map(Key1, Value1, Key2, Value2, ...) Creates a Map and sets items.
+Object() Creates a new Object.
+
+
+Clone() 	For Object.\n Returns a shallow copy of an object.
+DefineProp(Name, Descriptor) 	For Object.\n Defines or modifies an own property.
+DeleteProp(Name) 	For Object.\n Removes an own property from an object.
+GetOwnPropDesc(Name) 	For Object.\n Returns a descriptor for a given own property,\n	 compatible with DefineProp.
+HasOwnProp(Name) 	For Object.\n Returns 1 (true) if an object owns a property\n	 by the specified name, otherwise 0 (false).
+OwnProps() 	For Object.\n Enumerates an object's own properties.
+
+
+Add(ControlType [, Options, Text]) 	For GuiObj.\n Creates a new control and adds it to the window.
+Destroy() 	For GuiObj.\n Removes the window and all its controls,\n	 freeing the corresponding memory and system resources.
+Flash([Blink]) 	For GuiObj.\n Blinks the window's button in the taskbar.
+GetClientPos([&X, &Y, &Width, &Height]) 	For GuiObj.\n Retrieves the position and size of the window's client area.
+GetPos([&X, &Y, &Width, &Height]) 	For GuiObj.\n Retrieves the position and size of the window.
+Hide() 	For GuiObj.\n Hides the window.
+Maximize() 	For GuiObj.\n Unhides the window (if necessary) and maximizes it.
+Minimize() 	For GuiObj.\n Unhides the window (if necessary) and minimizes it.
+Move([X, Y, Width, Height]) 	For GuiObj.\n Moves and/or resizes the window.
+OnEvent(EventName, Callback [, AddRemove]) 	For GuiObj.\n Registers a function or method to be\n	 called when the given event is raised.
+Opt(Options) 	For GuiObj.\n Sets various options and styles for\n	 the appearance and behavior of the window.
+Restore() 	For GuiObj.\n Unhides the window (if necessary) and unminimizes or unmaximizes it.
+SetFont([Options, FontName]) 	For GuiObj.\n Sets the font typeface, size, style,\n	 and/or color for controls added to the window from this point onward.
+Show([Options]) 	For GuiObj.\n By default, this makes the window visible,\n	 unminimizes it (if necessary) and activates it.
+Submit([Hide]) 	For GuiObj.\n Collects the values from named controls and\n	 composes them into an Object. Optionally hides the window.
+
+
+Add(ControlType [, Options, Text]) 	For GuiObj.\n Creates a new control and adds it to the window.
+AddActiveX([Options, Text])
+AddButton([Options, Text]) 	For GuiObj.\n A pushbutton, which can be pressed to trigger an action.\n	 In this case, the last parameter is the name of\n	 the button (shown on the button itself),\n	 which may include linefeeds (`n) to start new lines.
+AddCheckBox([Options, Text]) 	For GuiObj.\n A small box that can be checked or unchecked\n	 to represent On/Off, Yes/No, etc.
+AddComboBox([Options, ["item1","item2"]]) 	For GuiObj.\n Same as DropDownList but also permits free-form text to be\n	 entered as an alternative to picking an item from the list.
+AddCustom([Options, Text]) 	For GuiObj.\n Other controls which are not directly supported by AutoHotkey\n	 can be also embedded into a GUI window.\n	 In order to do so, include in Options the word Class\n	 followed by the Win32 class name of the desired control.
+AddDateTime([Options, Text]) 	For GuiObj.\n A box that looks like a single-line edit control\n	 but instead accepts a date and/or time.\n	 A drop-down calendar is also provided.
+AddDropDownList([Options, ["item1","item2"]]) 	For GuiObj.\n A list of choices that is displayed in response to pressing a small button.\n	 In this case, the last parameter of Gui.Add is\n	 an Array like ["Choice1", "Choice2", "Choice3"].
+AddEdit([Options, Text]) 	For GuiObj.\n An area where free-form text can be typed by the user.
+AddGroupBox([Options, Text]) 	For GuiObj.\n A rectangular border/frame, often used around other controls\n	 to indicate they are related.\n	 In this case, the last parameter is the title of the box,\n	 which if present is displayed at its upper-left edge.
+AddHotkey([Options]) 	For GuiObj.\n A box that looks like a single-line edit control but\n	 instead accepts a keyboard combination pressed by the user.\n	 For example, if the user presses Ctrl+Alt+C\n	 on an English keyboard layout, the box would display "Ctrl + Alt + C".
+AddLink([Options, 'This is a <a href="https://www.autohotkey.com">link</a>']) 	For GuiObj.\n A text control that can contain links similar to those found in a web browser.\n	 Within the control's text, enclose the link text\n	 within <A> and </A> to create a clickable link.\n	 Although this looks like HTML, Link controls only support\n	 the opening <A> tag (optionally with an ID and/or HREF attribute)\n	 and closing </A> tag.
+AddListBox([Options, ["item1","item2"]]) 	For GuiObj.\n A relatively tall box containing a list of choices\n	 that can be selected.\n	 In this case, the last parameter of Gui.Add is an Array\n	 like ["Choice1", "Choice2", "Choice3"].
+AddListView([Options, ["item1","item2"]]) 	For GuiObj.\n A ListView is one of the most elaborate controls\n	 provided by the operating system.\n	 In its most recognizable form, it displays a tabular view of rows and columns,\n	 the most common example of which is Explorer's list of files and folders (detail view).
+AddMonthCal([Options]) 	For GuiObj.\n A tall and wide control that displays all the days of the month in calendar format.\n	 The user may select a single date or a range of dates.
+AddPicture([Options, "C:\MyPic.gif"]) 	For GuiObj.\n An area containing an image (see last two paragraphs for supported file types).\n	 The last parameter is the filename of the image, which is assumed to be\n	 in A_WorkingDir if an absolute path isn't specified.
+AddProgress([Options, StartValue]) 	For GuiObj.\n A dual-color bar typically used to indicate\n	 how much progress has been made toward the completion of an operation.
+AddRadio([Options, Text]) 	For GuiObj.\n A radio button is a small empty circle that can be checked (on) or unchecked (off).
+AddSlider([Options, StartValue]) 	For GuiObj.\n A sliding bar that the user can move along a vertical or horizontal track.\n	 The standard volume control in the taskbar's tray is an example of a slider.
+AddStatusBar([Options, Text]) 	For GuiObj.\n A row of text and/or icons attached to the bottom of a window,\n	 which is typically used to report changing conditions.
+AddTab([Options, ["item1","item2"]]) 	For GuiObj.\n A large control containing multiple pages, each of which contains other controls.\n	 From this point forward, these pages are referred to as "tabs".
+AddText([Options, Text]) 	For GuiObj.\n A region containing borderless text that the user cannot edit.\n	 Often used to label other controls.
+AddTreeView([Options]) 	For GuiObj.\n A TreeView displays a hierarchy of items by indenting child items beneath their parents.\n	 The most common example is Explorer's tree of drives and folders.
+AddUpDown([Options, Value]) 	For GuiObj.\n A pair of arrow buttons that the user\n	 can click to increase or decrease a value.
+
+SetText("Text") 	StatusBar Method.\n Displays NewText in the specified part of the status bar.
+SetParts([Width1, Width2, ... Width255]) 	StatusBar Method.\n Divides the bar into multiple sections\n	 according to the specified widths (in pixels).
+SetIcon(FileName [, IconNumber, PartNumber]) 	StatusBar Method.\n Displays a small icon to the left of the text in the specified part.
+
+SetFormat([Format]) 	DateTime Method.\n Sets the display format of a DateTime control.
+
+UseTab([Value, ExactMatch]) 	Tab Method.\n Specifies the tab to which subsequently created controls will be added.
+
+Add(Items) 	For GuiCtrl obj.\n Appends items to a multi-item control\n	 (ListBox, DropDownList, ComboBox, or Tab).
+Choose(Value) 	For GuiCtrl obj.\n Selects an item in a multi-item control\n	 (ListBox, DropDownList, ComboBox, or Tab).
+Delete([Value]) 	For GuiCtrl obj.\n Deletes one or all items from a multi-item control\n	 (ListBox, DropDownList, ComboBox, or Tab).
+Focus() 	For GuiCtrl obj.\n Sets keyboard focus to the control.
+GetPos([&X, &Y, &Width, &Height]) 	For GuiCtrl obj.\n Retrieves the position and size of the control.
+Move([X, Y, Width, Height]) 	For GuiCtrl obj.\n Moves and/or resizes the control.
+OnCommand(NotifyCode, Callback [, AddRemove]) 	For GuiCtrl obj.\n Registers a function or method to be called when\n	 a control notification is received via the WM_COMMAND message.
+OnEvent(EventName, Callback [, AddRemove]) 	For GuiCtrl obj.\n Registers a function or method to be called when\n	 the given event is raised.
+OnNotify(NotifyCode, Callback [, AddRemove]) 	For GuiCtrl obj.\n Registers a function or method to be called when\n	 a control notification is received via the WM_NOTIFY message.
+Opt(Options) 	For GuiCtrl obj.\n Sets various options and styles for\n	 the appearance and behavior of the control.
+Redraw() 	For GuiCtrl obj.\n Redraws the region of the GUI window occupied by the control.
+SetFont([Options, FontName]) 	For GuiCtrl obj.\n Sets the font typeface,\n	 size, style, and/or color for the control.
+
+
+Add([MenuItemName, CallbackOrSubmenu, Options]) 	For Menu/MenuBar object.\n Adds or modifies a menu item.
+AddStandard() 	For Menu/MenuBar object.\n Adds the standard tray menu items.
+Check(MenuItemName) 	For Menu/MenuBar object.\n Adds a visible checkmark in the menu\n	 next to a menu item (if there isn't one already).
+Delete([MenuItemName]) 	For Menu/MenuBar object.\n Deletes one or all menu items.
+Disable(MenuItemName) 	For Menu/MenuBar object.\n Grays out a menu item to indicate that the user cannot select it.
+Enable(MenuItemName) 	For Menu/MenuBar object.\n Allows the user to once again select\n	 a menu item if it was previously disabled (grayed out).
+Insert([MenuItemName, ItemToInsert, CallbackOrSubmenu, Options]) 	For Menu/MenuBar object.\n Inserts a new item before the specified item.
+Rename(MenuItemName [, NewName]) 	For Menu/MenuBar object.\n Renames a menu item.
+SetColor([ColorValue, ApplyToSubmenus]) 	For Menu/MenuBar object.\n Changes the background color of the menu.
+SetIcon(MenuItemName, FileName [, IconNumber, IconWidth]) 	For Menu/MenuBar object.\n Sets the icon to be displayed next to a menu item.
+Show([X, Y]) 	For Menu/MenuBar object.\n Displays the menu.
+ToggleCheck(MenuItemName) 	For Menu/MenuBar object.\n Adds a checkmark if there wasn't one; otherwise, removes it.
+ToggleEnable(MenuItemName) 	For Menu/MenuBar object.\n Disables a menu item if it was previously enabled; otherwise, enables it.
+Uncheck(MenuItemName) 	For Menu/MenuBar object.\n Removes the checkmark (if there is one) from a menu item.
+
+
+Clone() 	For ArrayObj.\n Returns a shallow copy of an array.
+Delete(Index) 	For ArrayObj.\n Removes the value of an array element,\n	 leaving the index without a value.
+Get(Index [, Default]) 	For ArrayObj.\n Returns the value at a given index, or a default value.
+Has(Index) 	For ArrayObj.\n Returns a non-zero number if the index is\n	 valid and there is a value at that position.
+InsertAt(Index, Value1 [, Value2, ... ValueN]) 	For ArrayObj.\n Inserts one or more values at a given position.
+Pop() 	For ArrayObj.\n Removes and returns the last array element.
+Push([Value, Value2, ..., ValueN]) 	For ArrayObj.\n Appends values to the end of an array.
+RemoveAt(Index [, Length]) 	For ArrayObj.\n Removes items from an array.
+
+
+Clear() 	For Map object.\n Removes all key-value pairs from a map.
+Clone() 	For Map object.\n Returns a shallow copy of a map.
+Delete(Key) 	For Map object.\n Removes a key-value pair from a map.
+Get(Key [, Default]) 	For Map object.\n Returns the value associated with a key, or a default value.
+Has(Key) 	For Map object.\n Returns true if the specified key has\n	 an associated value within a map, otherwise false.
+Set([Key, Value, Key2, Value2, ...]) 	For Map object.\n Sets zero or more items.
+
+
+
+Add([Options, Col1, Col2, ...]) 	For ListView obj.\n Adds a new row to the bottom of the list.
+Insert(RowNumber [, Options, Col1, Col2, ...]) 	For ListView obj.\n Inserts a new row at the specified row number.
+Modify(RowNumber [, Options, NewCol1, NewCol2, ...]) 	For ListView obj.\n Modifies the attributes and/or text of a row..
+Delete([RowNumber]) 	For ListView obj.\n Deletes the specified row or all rows.
+ModifyCol([ColumnNumber, Options, ColumnTitle]) 	For ListView obj.\n Modifies the attributes and/or text of the specified column and its header.
+InsertCol([ColumnNumber, Options, ColumnTitle]) 	For ListView obj.\n Inserts a new column at the specified column number.
+DeleteCol(ColumnNumber) 	For ListView obj.\n Deletes the specified column and all of the contents beneath it.
+GetCount([Mode]) 	For ListView obj.\n Selected|Column \n Returns the number of rows or columns in the control.
+GetNext([StartingRowNumber, RowType]) 	For ListView obj.\n Returns the row number of the next selected, checked, or focused row.
+GetText(RowNumber [, ColumnNumber]) 	For ListView obj.\n Retrieves the text at the specified row and column number.
+SetImageList(ImageListID [, IconType]) 	For ListView obj.\n Sets or replaces an ImageList for displaying icons.
+
+
+Add(Name, [ParentItemID, Options]) 	For TreeView obj.\n Adds a new item to the TreeView.
+Modify(ItemID [, Options, NewName]) 	For TreeView obj.\n Modifies the attributes and/or name of an item.
+Delete([ItemID]) 	For TreeView obj.\n Deletes the specified item or all items.
+GetSelection() 	For TreeView obj.\n Returns the selected item's ID number.
+GetCount() 	For TreeView obj.\n Returns the total number of items in the control.
+GetParent(ItemID) 	For TreeView obj.\n Returns the ID number of the specified item's parent.
+GetChild(ItemID) 	For TreeView obj.\n Returns the ID number of the specified item's first/top child.
+GetPrev(ItemID) 	For TreeView obj.\n Returns the ID number of the sibling above the specified item.
+GetNext([ItemID, ItemType]) 	For TreeView obj.\n Returns the ID number of the next item below the specified item.
+GetText(ItemID) 	For TreeView obj.\n Retrieves the text/name of the specified item.
+Get(ItemID, Attribute) 	For TreeView obj.\n Returns the ID number of the specified item if it has the specified attribute.
+SetImageList(ImageListID [, IconType]) 	For TreeView obj.\n Sets or replaces an ImageList for displaying icons.
+
+
+
+
+
+Read([Characters]) 	For File obj.\n Reads a string of characters from the file and advances the file pointer.
+Write(String) 	For File obj.\n Writes a string of characters to the file and advances the file pointer.
+WriteLine([String]) 	For File obj.\n Writes a line of text to the file and advances the file pointer.
+ReadLine() 	For File obj.\n Reads a line of text from the file and advances the file pointer.
+ReadNumType() 	For File obj.\n Reads a number from the file and advances the file pointer.
+WriteNumType(Num) 	For File obj.\n Writes a number to the file and advances the file pointer.
+RawRead(Buffer [, Bytes]) 	For File obj.\n Reads raw binary data from the file into memory and advances the file pointer.
+RawWrite(Data [, Bytes]) 	For File obj.\n Writes raw binary data to the file and advances the file pointer.
+Seek(Distance [, Origin]) 	For File obj.\n Moves the file pointer.
+Close() 	For File obj.\n Closes the file, flushes any data in the cache to disk and releases the share locks.
+
+
+Bind(Param1, Param2, ...) 	For Func obj.\n Binds parameters to the function.
+IsByRef([ParamIndex]) 	For Func obj.\n Determines whether a parameter is ByRef.
+IsOptional([ParamIndex]) 	For Func obj.\n Determines whether a parameter is optional.
+
+
+
+GetMethod([Name, ParamCount]) 	For Any obj.\n Retrieves the implementation function of a method.
+HasBase(BaseObj) 	For Any obj.\n Returns true if the specified base object is in the value's chain of base objects, otherwise false.
+HasMethod([Name, ParamCount]) 	For Any obj.\n Returns true if the value has a method by this name, otherwise false.
+HasProp(Name) 	For Any obj.\n Returns true if the value has a property by this name, otherwise false.
+
+
+
+
+
+MaxIndex(n) 	For ComObjArray obj.\n Returns the upper bound of the nth dimension.\n	 If n is omitted, it defaults to 1.
+MinIndex(n) 	For ComObjArray obj.\n Returns the lower bound of the nth dimension.\n	 If n is omitted, it defaults to 1.
+Clone() 	For ComObjArray obj.\n Returns a copy of the array.
+__Enum() 	For ComObjArray obj.\n Not typically called by script; allows for-loops to be used with SafeArrays.
+
+
+
+KeyOpt(Keys, KeyOptions) 	For InputHook obj.\n Sets options for a key or list of keys.
+Start() 	For InputHook obj.\n Starts collecting input.
+Stop() 	For InputHook obj.\n Terminates the Input and sets EndReason to the word Stopped.
+Wait([MaxTime]) 	For InputHook obj.\n Waits until the Input is terminated (InProgress is false).
+
+
+A_Space
+A_Tab
+A_Args
+A_WorkingDir
+A_InitialWorkingDir
+A_ScriptDir
+A_ScriptName
+A_ScriptFullPath
+A_ScriptHwnd
+A_LineNumber
+A_LineFile
+A_ThisFunc
+A_AhkVersion
+A_AhkPath
+A_IsCompiled
+A_YYYY
+A_MM
+A_DD
+A_MMMM
+A_MMM
+A_DDDD
+A_DDD
+A_WDay
+A_YDay
+A_YWeek
+A_Hour
+A_Min
+A_Sec
+A_MSec
+A_Now
+A_NowUTC
+A_TickCount
+A_IsSuspended
+A_IsPaused
+A_IsCritical
+A_ListLines
+A_TitleMatchMode
+A_TitleMatchModeSpeed
+A_DetectHiddenWindows
+A_DetectHiddenText
+A_FileEncoding
+A_SendMode
+A_SendLevel
+A_StoreCapsLockMode
+A_KeyDelay
+A_KeyDuration
+A_KeyDelayPlay
+A_KeyDurationPlay
+A_WinDelay
+A_ControlDelay
+A_MenuMaskKey
+A_MouseDelay
+A_MouseDelayPlay
+A_DefaultMouseSpeed
+A_CoordModeTooltip
+A_CoordModePixel
+A_CoordModeMouse
+A_CoordModeCaret
+A_CoordModeMenu
+A_RegView
+A_TrayMenu
+A_AllowMainWindow
+A_IconHidden
+A_IconTip
+A_IconFile
+A_IconNumber
+A_TimeIdle
+A_TimeIdlePhysical
+A_TimeIdleKeyboard
+A_TimeIdleMouse
+A_ThisHotkey
+A_PriorHotkey
+A_PriorKey
+A_TimeSinceThisHotkey
+A_TimeSincePriorHotkey
+A_EndChar
+A_MaxHotkeysPerInterval
+A_HotkeyInterval
+A_HotkeyModifierTimeout
+A_ComSpec
+A_Temp
+A_OSVersion
+A_Is64bitOS
+A_PtrSize
+A_Language
+A_ComputerName
+A_UserName
+A_WinDir
+A_ProgramFiles
+A_AppData
+A_AppDataCommon
+A_Desktop
+A_DesktopCommon
+A_StartMenu
+A_StartMenuCommon
+A_Programs
+A_ProgramsCommon
+A_Startup
+A_StartupCommon
+A_MyDocuments
+A_IsAdmin
+A_ScreenWidth
+A_ScreenHeight
+A_ScreenDPI
+A_Clipboard
+A_Cursor
+A_EventInfo
+A_LastError
+A_Index
+A_LoopFileName
+A_LoopRegName
+A_LoopReadLine
+A_LoopField
+A_LoopFileExt
+A_LoopFilePath
+A_LoopFileFullPath
+A_LoopFileShortPath
+A_LoopFileShortName
+A_LoopFileDir
+A_LoopFileTimeModified
+A_LoopFileTimeCreated
+A_LoopFileTimeAccessed
+A_LoopFileAttrib
+A_LoopFileSize
+A_LoopFileSizeKB
+A_LoopFileSizeMB
+A_LoopRegType
+A_LoopRegKey
+A_LoopRegTimeModified
+false
+true
+unset
+
+
+
+
+
+
+
+
+
+
+
+
